@@ -1,17 +1,15 @@
 {
   "name": "jssm-viz-action",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "description": "Automatic visualizer of FSL machines to flowcharts using JSSM and JSSM-Viz",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
-    "pack": "ncc build",
+    "pack": "rollup -c",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
+    "all": "npm run build && npm run lint && npm run pack && npm test"
   },
   "repository": {
     "type": "git",
