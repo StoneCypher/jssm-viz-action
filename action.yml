@@ -1,30 +1,41 @@
-name: 'JSSM Automatic Visualization'
-description: 'Automatically render your FSL machines to PNG or SVG flowcharts using jssm-viz'
+name: 'FSL Automatic Flowchart Visualization of finite state machines'
+description: 'Automatically render your FSL finite state machines to PNG or SVG flowcharts using jssm-viz.  Pretty painless'
 author: 'John Haugeland <stonecypher@gmail.com>'
 inputs:
   targetGlob:
     description: 'Glob to use as target.  Defaults to either `./**/*.fsl`. Usually just a filename when specified'
     default: './**/*.fsl'
+  branch:
+    description: 'Either "current" for the branch that targeted the action'
+    required: true
+    default: false
   usePng:
     description: 'Include PNG format when outputting images'
+    required: true
     default: false
   useSvg:
     description: 'Include SVG format when outputting images'
+    required: true
     default: true
   useJpeg:
     description: 'Include JPEG format when outputting images (same as JPG but four letter extension)'
+    required: true
     default: false
   useJpg:
     description: 'Include JPG format when outputting images (same as JPEG but three letter extension)'
+    required: true
     default: false
   useWebP:
     description: 'Include WebP format when outputting images'
+    required: true
     default: false
   useDot:
     description: 'Include GraphViz DOT format when outputting (source, not an image)'
+    required: true
     default: false
   useJsonTree:
     description: 'Include Tree-As-JSON format when outputting (source, not an image)'
+    required: true
     default: false
 runs:
   using: 'node12'

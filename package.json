@@ -1,6 +1,6 @@
 {
   "name": "jssm-viz-action",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "description": "Automatic visualizer of FSL machines to flowcharts using JSSM and JSSM-Viz",
   "main": "lib/main.js",
@@ -26,6 +26,7 @@
     "@actions/core": "^1.2.0"
   },
   "devDependencies": {
+    "@actions/github": "^2.0.0",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.7.12",
     "@typescript-eslint/parser": "^2.8.0",
