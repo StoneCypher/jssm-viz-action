@@ -6,3 +6,9 @@ contact_links:
   - name: Live community on Discord
     url: https://discord.com/invite/9P95USqnMK
     about: Come chat with us
+  - name: Live editor
+    url: https://stonecypher.github.io/jssm-viz-demo/graph_explorer.html
+    about: Try what you're doing live
+  - name: Documentation
+    url: https://stonecypher.github.io/jssm/docs/
+    about: Read the friendly manual
